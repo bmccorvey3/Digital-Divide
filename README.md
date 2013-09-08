@@ -3,7 +3,6 @@ Digital-Divide
 
 Project to simulate digital divide
 
-
 digitaldivide.herokuapp.com
 
-First time with Javascript, HTML, CSS
+First time with Javascript, HTML, CSS. Use Chrome. Unstable version.
