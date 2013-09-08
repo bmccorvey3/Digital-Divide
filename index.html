@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Interactive Digital Divide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/vendor/normalize.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    </head>
+    
+
+    <body>
+        <div class="header animate">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Digital Divide</a>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Map</a></li>
+                        <li><a href="first.html">First Time Users</a></li>
+                   <!--     <li><a href="map.html">Map</a></li> -->
+                        <li><a href="instruction.html">Instructions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class = "map_info">
+                <ul class "map_in">
+                    <li> 
+                    </li>
+                </ul>
+
+                <!-- Add details on how to select countries and change color -->
+                <!-- Change colors on map. Green is technically advanced, gray is no data
+                    add data on Panama, red is slightly advanced, orange, yellow, etc -->
+
+            </div>
+
+            <div class="func_buttons">
+
+                    <span><div id="computers"class="btn btn-primary">Send Computers</div></span>
+                    <span><div id="internet" class="btn btn-primary">Increase Internet Access</div></span>
+                    <span><div id="mobile_phones" class="btn btn-primary">Send Mobile Phones</div></span>
+                    <span><div id="broadband" class="btn btn-primary"> Provide Fixed-Broadband</div></span>
+                    <span><div id="education" class="btn btn-primary">Increase Educational Funding</div></span>
+                    <span><div id="reset" class="btn btn-inverse">Reset</div></span>
+
+            </div>
+
+            <div class="ui-widget">
+               <label for="tags">Enter a country: </label>
+               <input id="tags" />
+               <div id="wha_country"></div> 
+               <div id="costoutput">
+                   <div id="cost" class="btn btn-small btn-primary disabled">Cost</div>
+                   <div id="output" class= "btn btn-small btn-primary disabled"><span>$</span>0</div>
+               </div>
+           </div>
+           <div class="container2">
+                <img src="images/key.jpg" width=100 style="padding-top: 150px;align: left"></img>
+               <div id="map_world"></div>
+           </div>
+
+            
+
+
+          <!--  <div id="google_map"></div> 
+
+                <div class="buttons">
+                    <div id="add_computers" class="btn btn-secondary"> Add computers </div>
+                    <div id="remove_computers" class="btn btn-danger"> Remove computers </div>
+                    <div id="grow_circles" class="btn btn-primary"> Grow circles </div> 
+
+                </div> -->
+
+        </div>
+
+        <!-- <div id="container1" style="height: 500px; width: 960px"></div> -->
+        
+
+        <!-- Javascript files at the end -->
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/datamaps.js"></script>
+        <script src="js/choropleth.js"></script>
+        <script src="js/vendor/d3.v3.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="js/zoom.js"></script>
+        <script src="js/vendor/bootbox.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script>
+          /*  bootbox.alert("Before you begin, click on Instructions, located in the top-right corner.") */
+        </script>
+
+        <script>
+
+        document.querySelector( '#map_world' ).addEventListener( 'dblclick', function( event ) {
+            event.preventDefault();
+            zoom.to({ element: event.target });
+        } );
+        
+        </script>
+
+
+       <!--<script src="js/zoom.js"></script> -->
+        <!-- This is the Google Maps v3 API -->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    </body>
+</html>
