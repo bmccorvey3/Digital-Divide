@@ -5,4 +5,6 @@ Project to simulate digital divide
 
 digitaldivide.herokuapp.com
 
-First time with Javascript, HTML, CSS. Use Chrome. Unstable version.
+First time with Javascript, HTML, CSS. Use Chrome. 
+
+Website is unstable
